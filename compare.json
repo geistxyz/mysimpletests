@@ -1,0 +1,207 @@
+[
+    {
+      "F1": "AAAA",
+      "F2": "*USER",
+      "F3": "*SYSVAL",
+      "F4": "170608",
+      "F5": "165107",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*NONE"
+    },
+    {
+      "F1": "AMANDA",
+      "F2": "*SECOFR",
+      "F3": "*SYSVAL",
+      "F4": "170808",
+      "F5": "153042",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "ARP",
+      "F2": "*SECOFR",
+      "F3": "*SYSVAL",
+      "F4": "160701",
+      "F5": "110657",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "ARPGRP",
+      "F2": "*USER",
+      "F3": "*SYSVAL",
+      "F4": "170914",
+      "F5": "165511",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*NONE"
+    },
+    {
+      "F1": "ARP1",
+      "F2": "*USER",
+      "F3": "*SYSVAL",
+      "F4": "170914",
+      "F5": "165729",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*NONE"
+    },
+    {
+      "F1": "ARTURO",
+      "F2": "*SECADM",
+      "F3": "*SYSVAL",
+      "F4": "170317",
+      "F5": "105914",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "ATHOS",
+      "F2": "*USER",
+      "F3": "*SYSVAL",
+      "F4": "170927",
+      "F5": "180930",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*NONE"
+    },
+    {
+      "F1": "AVG",
+      "F2": "*SECOFR",
+      "F3": "*SYSVAL",
+      "F4": "160712",
+      "F5": "082529",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "GUIDO",
+      "F2": "*SECOFR",
+      "F3": "*SYSVAL",
+      "F4": "160715",
+      "F5": "131349",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "IGA",
+      "F2": "*SECOFR",
+      "F3": "*SYSVAL",
+      "F4": "170808",
+      "F5": "153540",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "THY",
+      "F2": "*USER",
+      "F3": "*SYSVAL",
+      "F4": "160715",
+      "F5": "131357",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*ALLOBJ   AUDIT    IOSYSCFG JOBCTL   SAVSYS   SECADM   SERVICE  *SPLCTL"
+    },
+    {
+      "F1": "USRDELTA",
+      "F2": "*USER",
+      "F3": "*SYSVAL",
+      "F4": "170927",
+      "F5": "180815",
+      "F6": "0",
+      "F7": "*NO",
+      "F8": "*NO",
+      "F9": "*NONE"
+    },
+    {
+      "F1": DL
+      "F2": UB, *ALL , "",
+      "F3": UP,
+      "F4": 
+      "F5":
+      "F6": 
+      "F7": 
+      "F8": 
+      "F9": 
+    }
+  ]
+  
+  
+  
+  
+  a =[
+    {
+      "F1": "AAAA",
+      "F2": "*USER"
+    },
+    {
+      "F1": "AMANDA",
+      "F2": "*SECOFR"
+    },
+    {
+      "F1": "ARP",
+      "F2": "*SECOFR"
+    }
+  ]
+b=[
+    {
+      "F1": "BBBB",
+      "F2": "*USER"
+    },
+    {
+      "F1": "ARP",
+      "F2": "*SECOFR"
+    },
+    {
+      "F1": "NEW",
+      "F2": "BLABLA"
+    },
+    {
+      "F1": "PIP",
+      "F2": "TURN"
+    }
+  ]
+resultado=[
+    {
+      "F0": "UB",
+      "F1": "AAAA",
+      "F2": "*USER"
+    },
+    {
+      "F0": "UP",
+      "F1": "BBBB",
+      "F2": "*USER"
+    },
+    {
+      "F0": "DL",
+      "F1": "AMANDA",
+      "F2": "*SECOFR"
+    },
+    {
+      "F1": "ARP",
+      "F2": "*SECOFR"
+    },
+    {
+      "F0": "PT",
+      "F1": "NEW",
+      "F2": "BLABLA"
+    }
+  ]
