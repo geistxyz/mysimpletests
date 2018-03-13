@@ -179,29 +179,3 @@ b=[
       "F2": "TURN"
     }
   ]
-resultado=[
-    {
-      "F0": "UB",
-      "F1": "AAAA",
-      "F2": "*USER"
-    },
-    {
-      "F0": "UP",
-      "F1": "BBBB",
-      "F2": "*USER"
-    },
-    {
-      "F0": "DL",
-      "F1": "AMANDA",
-      "F2": "*SECOFR"
-    },
-    {
-      "F1": "ARP",
-      "F2": "*SECOFR"
-    },
-    {
-      "F0": "PT",
-      "F1": "NEW",
-      "F2": "BLABLA"
-    }
-  ]
