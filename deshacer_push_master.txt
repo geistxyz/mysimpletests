@@ -1,0 +1,117 @@
+DESHACER UN PUSH EN EL MASTER 
+
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git pull
+Already up to date.
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git merge grace-1234
+Updating 0c5377b..21aa377
+Fast-forward
+ compare.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': geistxyz
+Password for 'https://geistxyz@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/geistxyz/mysimpletests.git
+   0c5377b..21aa377  master -> master
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git log
+commit 21aa377ceff7b894f7fd8a487ab2522b48d88a92 (HEAD -> master, origin/master, origin/grace-1234, origin/HEAD, grace-1234)
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Tue Mar 13 08:44:01 2018 -0400
+
+    A very explicit commit message
+
+commit 0c5377bb3af1f6a7556a399b3127511fa6751ddd (origin/develop, develop)
+Merge: 7e62a7a 64b91ca
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:42:17 2018 -0400
+
+    Merge branch 'develop' of https://github.com/geistxyz/mysimpletests into develop
+
+commit 7e62a7aba92960960bfaa0bf1655874bad2e44ad
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:37:53 2018 -0400
+
+     DELETED sortTest.go and updated compare.json
+
+commit ac466b33a77d6db3e7705e81d9910396144c7fbf
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:21:49 2018 -0400
+
+    Bug fix 1234
+
+commit 64b91caa4fcf86b8f88cd3b536a479d06a2b0570
+Merge: 28d60b5 7204bae
+Author: Grace Pahuasi <grace@trinityguard.com>
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git push -f origin 0c5377bb3af1f6a7556a399b3127511fa6751ddd:master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': geistxyz
+Password for 'https://geistxyz@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/geistxyz/mysimpletests.git
+ + 21aa377...0c5377b 0c5377bb3af1f6a7556a399b3127511fa6751ddd -> master (forced update)
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git log
+commit 21aa377ceff7b894f7fd8a487ab2522b48d88a92 (HEAD -> master, origin/grace-1234, grace-1234)
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Tue Mar 13 08:44:01 2018 -0400
+
+    A very explicit commit message
+
+commit 0c5377bb3af1f6a7556a399b3127511fa6751ddd (origin/master, origin/develop, origin/HEAD, develop)
+Merge: 7e62a7a 64b91ca
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:42:17 2018 -0400
+
+    Merge branch 'develop' of https://github.com/geistxyz/mysimpletests into develop
+
+commit 7e62a7aba92960960bfaa0bf1655874bad2e44ad
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:37:53 2018 -0400
+
+     DELETED sortTest.go and updated compare.json
+
+commit ac466b33a77d6db3e7705e81d9910396144c7fbf
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:21:49 2018 -0400
+
+    Bug fix 1234
+
+commit 64b91caa4fcf86b8f88cd3b536a479d06a2b0570
+Merge: 28d60b5 7204bae
+Author: Grace Pahuasi <grace@trinityguard.com>
+Date:   Mon Mar 12 19:39:58 2018 -0400
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git reset --hard HEAD~1
+HEAD is now at 0c5377b Merge branch 'develop' of https://github.com/geistxyz/mysimpletests into develop
+
+c:\trinity_guard\tests\git_tests\mysimpletests>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
